@@ -1,6 +1,6 @@
 require 'buildr/git_auto_version'
 
-desc 'GWT PropertySource Library'
+desc 'GWT Property Source Library: Programmatic access to compile time configuration values'
 define 'gwt-property-source' do
   project.group = 'org.realityforge.gwt.property-source'
   compile.options.source = '1.7'

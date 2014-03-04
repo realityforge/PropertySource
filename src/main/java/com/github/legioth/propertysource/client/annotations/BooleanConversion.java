@@ -30,7 +30,7 @@ public @interface BooleanConversion {
      * 
      * @return a regular expression.
      */
-    public String truePattern() default "";
+    String truePattern() default "";
 
     /**
      * Defines a list of values that makes the method return <code>true</code>
@@ -39,7 +39,7 @@ public @interface BooleanConversion {
      * 
      * @return a regular expression.
      */
-    public String[] trueValues() default {};
+    String[] trueValues() default {};
 
     /**
      * Defines whether all values of a multi value property must match the
@@ -50,5 +50,5 @@ public @interface BooleanConversion {
      * This attribute has no effect for properties that do not have multiple
      * values.
      */
-    public boolean matchAll() default false;
+    boolean matchAll() default false;
 }

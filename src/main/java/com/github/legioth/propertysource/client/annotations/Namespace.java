@@ -25,5 +25,5 @@ public @interface Namespace {
      * 
      * @return the name of the namespace
      */
-    public String value();
+    String value();
 }

@@ -18,7 +18,7 @@ public class StringTypeHandlerTest
     };
   }
 
-  @Test( dataProvider = "actionDescriptions" )
+  @Test( dataProvider = "writeValues" )
   public void writeValues( final String input, final String output )
   {
     final StringSourceWriter writer = new StringSourceWriter();

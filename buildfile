@@ -12,7 +12,7 @@ define 'gwt-property-source' do
   pom.add_apache2_license
   pom.add_github_project("realityforge/gwt-property-source")
 	
-  pom.add_developer('Legioth', 'Leif Åstrand')
+  pom.add_developer('Legioth', 'Leif Astrand')
   pom.add_developer('realityforge', 'Peter Donald')
   pom.provided_dependencies.concat [:javax_annotation, :gwt_user, :gwt_dev]
 

@@ -48,7 +48,7 @@ public class DynamicPropertySource
   {
     if ( GWT.isClient() )
     {
-      throw new IllegalStateException( "Only supported during the comile phase." );
+      throw new IllegalStateException( "Only supported during the compile phase." );
     }
     else
     {
@@ -67,7 +67,7 @@ public class DynamicPropertySource
   {
     if ( GWT.isClient() )
     {
-      throw new IllegalStateException( "Only supported during the comile phase." );
+      throw new IllegalStateException( "Only supported during the compile phase." );
     }
     else
     {
@@ -86,7 +86,7 @@ public class DynamicPropertySource
   {
     if ( GWT.isClient() )
     {
-      throw new IllegalStateException( "Only supported during the comile phase." );
+      throw new IllegalStateException( "Only supported during the compile phase." );
     }
     else
     {

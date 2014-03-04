@@ -1,6 +1,8 @@
 PropertySource
 ==============
 
+[![Build Status](https://secure.travis-ci.org/realityforge/gwt-property-source.png?branch=master)](http://travis-ci.org/realityforge/gwt-property-source)
+
 A convenient way of compiling GWT property values into your module.
 
 How

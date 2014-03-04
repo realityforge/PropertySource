@@ -10,17 +10,17 @@ import java.util.Set;
 class PropertyProxyImpl
   implements PropertyProxy
 {
-  private final TreeLogger logger;
-  private final PropertyOracle oracle;
-  private final Set<String> usedSelectionProperties;
+  private final TreeLogger _logger;
+  private final PropertyOracle _propertyOracle;
+  private final Set<String> _usedSelectionProperties;
 
   public PropertyProxyImpl( final TreeLogger logger,
-                            final PropertyOracle oracle,
+                            final PropertyOracle propertyOracle,
                             final Set<String> usedSelectionProperties )
   {
-    this.logger = logger;
-    this.oracle = oracle;
-    this.usedSelectionProperties = usedSelectionProperties;
+    _logger = logger;
+    _propertyOracle = propertyOracle;
+    _usedSelectionProperties = usedSelectionProperties;
   }
 
   @Override
@@ -28,8 +28,8 @@ class PropertyProxyImpl
   {
     try
     {
-      usedSelectionProperties.add( name );
-      return oracle.getSelectionProperty( logger, name ).getCurrentValue();
+      _usedSelectionProperties.add( name );
+      return _propertyOracle.getSelectionProperty( _logger, name ).getCurrentValue();
     }
     catch ( BadPropertyValueException e )
     {
@@ -42,8 +42,8 @@ class PropertyProxyImpl
   {
     try
     {
-      usedSelectionProperties.add( name );
-      return oracle.getSelectionProperty( logger, name ).getFallbackValue();
+      _usedSelectionProperties.add( name );
+      return _propertyOracle.getSelectionProperty( _logger, name ).getFallbackValue();
     }
     catch ( BadPropertyValueException e )
     {
@@ -56,7 +56,7 @@ class PropertyProxyImpl
   {
     try
     {
-      return oracle.getConfigurationProperty( name ).getValues();
+      return _propertyOracle.getConfigurationProperty( name ).getValues();
     }
     catch ( BadPropertyValueException e )
     {

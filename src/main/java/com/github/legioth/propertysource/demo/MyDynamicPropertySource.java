@@ -1,10 +1,9 @@
 package com.github.legioth.propertysource.demo;
 
+import com.github.legioth.propertysource.client.DynamicPropertySource;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
-import com.github.legioth.propertysource.client.DynamicPropertySource;
 
 public class MyDynamicPropertySource extends DynamicPropertySource {
 

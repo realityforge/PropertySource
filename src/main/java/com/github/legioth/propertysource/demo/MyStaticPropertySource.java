@@ -1,11 +1,10 @@
 package com.github.legioth.propertysource.demo;
 
-import java.util.List;
-
 import com.github.legioth.propertysource.client.PropertySource;
 import com.github.legioth.propertysource.client.annotations.BooleanConversion;
 import com.github.legioth.propertysource.client.annotations.Namespace;
 import com.github.legioth.propertysource.client.annotations.Property;
+import java.util.List;
 
 @Namespace("foo")
 public interface MyStaticPropertySource extends PropertySource {

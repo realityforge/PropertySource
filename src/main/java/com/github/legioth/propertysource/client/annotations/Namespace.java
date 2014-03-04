@@ -1,10 +1,9 @@
 package com.github.legioth.propertysource.client.annotations;
 
+import com.github.legioth.propertysource.client.PropertySource;
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Target;
-
-import com.github.legioth.propertysource.client.PropertySource;
 
 /**
  * Defines the namespace used for property lookup based on method names in

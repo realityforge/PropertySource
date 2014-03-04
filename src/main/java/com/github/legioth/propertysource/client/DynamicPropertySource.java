@@ -1,8 +1,7 @@
 package com.github.legioth.propertysource.client;
 
-import java.util.List;
-
 import com.google.gwt.core.shared.GWT;
+import java.util.List;
 
 /**
  * Each method in a subclass will be generated to return the value of returned

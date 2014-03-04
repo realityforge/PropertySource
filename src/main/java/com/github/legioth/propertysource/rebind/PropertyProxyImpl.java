@@ -1,12 +1,11 @@
 package com.github.legioth.propertysource.rebind;
 
-import java.util.List;
-import java.util.Set;
-
 import com.github.legioth.propertysource.client.DynamicPropertySource.PropertyProxy;
 import com.google.gwt.core.ext.BadPropertyValueException;
 import com.google.gwt.core.ext.PropertyOracle;
 import com.google.gwt.core.ext.TreeLogger;
+import java.util.List;
+import java.util.Set;
 
 class PropertyProxyImpl implements PropertyProxy {
 

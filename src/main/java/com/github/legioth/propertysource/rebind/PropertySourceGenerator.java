@@ -37,11 +37,10 @@ public class PropertySourceGenerator
 {
   private interface TypeHandler<T>
   {
-    public T getStaticReturnValue( TreeLogger logger,
-                                   List<String> propertyValue, JMethod method )
+    T getStaticReturnValue( TreeLogger logger, List<String> propertyValue, JMethod method )
       throws UnableToCompleteException;
 
-    public void writeValue( TreeLogger logger, SourceWriter writer, T value );
+    void writeValue( TreeLogger logger, SourceWriter writer, T value );
   }
 
   private static final Map<String, TypeHandler<?>> typeHandlers = new HashMap<String, TypeHandler<?>>();

@@ -13,6 +13,10 @@ class StringTypeHandler
 {
   static final StringTypeHandler INSTANCE = new StringTypeHandler();
 
+  private StringTypeHandler()
+  {
+  }
+
   @Override
   public String getStaticReturnValue( final TreeLogger logger,
                                       final List<String> propertyValue,

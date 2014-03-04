@@ -16,6 +16,10 @@ final class StringListTypeHandler
 {
   static final StringListTypeHandler INSTANCE = new StringListTypeHandler();
 
+  private StringListTypeHandler()
+  {
+  }
+
   @Override
   public List<String> getStaticReturnValue( final TreeLogger logger,
                                             final List<String> propertyValue,

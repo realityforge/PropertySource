@@ -13,6 +13,10 @@ final class BooleanTypeHandler
 {
   static final BooleanTypeHandler INSTANCE = new BooleanTypeHandler();
 
+  private BooleanTypeHandler()
+  {
+  }
+
   @Override
   public Boolean getStaticReturnValue( final TreeLogger logger,
                                        final List<String> propertyValues,

@@ -2,7 +2,7 @@ require 'buildr/git_auto_version'
 
 desc 'GWT PropertySource Library'
 define 'gwt-property-source' do
-  project.group = 'org.realityforge.gwt.property_source'
+  project.group = 'org.realityforge.gwt.property-source'
   compile.options.source = '1.7'
   compile.options.target = '1.7'
   compile.options.lint = 'all'

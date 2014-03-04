@@ -8,13 +8,13 @@ import com.github.legioth.propertysource.client.annotations.Property;
  * A method in an interface extending this interface will be generated to return
  * the value of property defined in gwt.xml files.If no corresponding property
  * is defined, an error will be raised during GWT compilation.
- * <p>
+ * <p/>
  * By default, the name of the method defines the name of the property that it
  * should be bound to. In addition to this, a @{@link Namespace} annotation can
  * be added to the interface to add a prefix to all properties resolved based on
  * method names. The @{@link Property} annotation can be used to override the
  * default property selection.
- * <p>
+ * <p/>
  * A GWT property is either a <code>String</code> or a
  * <code>List&lt;String&gt</code> for multi value configuration properties.
  * <code>String</code> can also be used for properties that are defined as multi
@@ -25,11 +25,12 @@ import com.github.legioth.propertysource.client.annotations.Property;
  * <code>false</code> for the value <code>"false"</code> and fail to compile if
  * the property has some other value. Other ways of converting string property
  * values to a boolean can be defined using @{@link BooleanConversion}.
- * 
+ *
  * @see Property
  * @see Namespace
  * @see DynamicPropertySource
  */
-public interface PropertySource {
-    // Marker interface only
+public interface PropertySource
+{
+  // Marker interface only
 }

@@ -11,7 +11,7 @@ import java.lang.annotation.Target;
  * will be used as a prefix when doing a property lookup based on a method name.
  * Methods for which a property name is defined using @{@link Property} do not
  * use the namespace.
- * <p>
+ * <p/>
  * If, for example, a property source interface marked with
  * <code>@Namespace("com.example")</code> contains a method named
  * <code>mode</code>, that method will return the value of the property
@@ -19,11 +19,12 @@ import java.lang.annotation.Target;
  */
 @Target(ElementType.TYPE)
 @Documented
-public @interface Namespace {
-    /**
-     * The name of the namespace
-     * 
-     * @return the name of the namespace
-     */
-    String value();
+public @interface Namespace
+{
+  /**
+   * The name of the namespace
+   *
+   * @return the name of the namespace
+   */
+  String value();
 }

@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module>
-	<inherits name="com.google.gwt.core.Core" />
-	<source path="client" />
+  <inherits name="com.google.gwt.core.Core"/>
+  <source path="client"/>
 
-	<generate-with class="com.github.legioth.propertysource.rebind.PropertySourceGenerator">
-		<when-type-assignable class="com.github.legioth.propertysource.client.PropertySource" />
-	</generate-with>
-
+  <generate-with class="com.github.legioth.propertysource.rebind.PropertySourceGenerator">
+    <when-type-assignable class="com.github.legioth.propertysource.client.PropertySource"/>
+  </generate-with>
 </module>

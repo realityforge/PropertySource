@@ -44,7 +44,7 @@ public class DynamicPropertySource
    * @param name the name of the property
    * @return the property value as a string
    */
-  protected String getSelectionPropertyValue( String name )
+  protected final String getSelectionPropertyValue( final String name )
   {
     if ( GWT.isClient() )
     {
@@ -63,7 +63,7 @@ public class DynamicPropertySource
    * @param name the name of the property
    * @return the property value as a string
    */
-  protected String getSelectionPropertyFallback( String name )
+  protected final String getSelectionPropertyFallback( final String name )
   {
     if ( GWT.isClient() )
     {
@@ -82,7 +82,7 @@ public class DynamicPropertySource
    * @param name the name of the property
    * @return the property values as a list of strings
    */
-  protected List<String> getConfigurationPropertyValues( String name )
+  protected final List<String> getConfigurationPropertyValues( final String name )
   {
     if ( GWT.isClient() )
     {

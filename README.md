@@ -81,3 +81,10 @@ public void doSomething()
 As long as the values of `BrowserPermutation.isBrowser1()` and `BrowserPermutation.isBrowser2()` are known at compile time, the GWT compiler will remove the browser specific code from the other permutations.
 
 This approach can make application code simpler, but for framework level code it has the drawback of requiring changes the original code if support for a new browser is added.
+
+Credit
+======
+
+This code was originally extracted from the PropertySource repository [1] created by Leif Åstrand. All credit for the idea and code goes to him. All bugs and problems introduced subsequently are my fault, please raise a GitHub issue.
+
+[1] https://github.com/Legioth/PropertySource

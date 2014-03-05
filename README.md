@@ -9,7 +9,7 @@ How
 ===
 
 ```xml
-<inherits name="com.github.legioth.propertysource.PropertySource" />
+<inherits name="org.realityforge.gwt.propertysource.PropertySource" />
 
 <define-property values="true,false" name="foo.bool" />
 <set-property name="foo.bool" value="false" />

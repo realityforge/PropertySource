@@ -3,7 +3,7 @@
   <inherits name="com.google.gwt.core.Core"/>
   <source path="client"/>
 
-  <generate-with class="com.github.legioth.propertysource.rebind.PropertySourceGenerator">
-    <when-type-assignable class="com.github.legioth.propertysource.client.PropertySource"/>
+  <generate-with class="org.realityforge.gwt.propertysource.rebind.PropertySourceGenerator">
+    <when-type-assignable class="org.realityforge.gwt.propertysource.client.PropertySource"/>
   </generate-with>
 </module>

@@ -9,28 +9,34 @@ How
 ===
 
 ```xml
-  <inherits name="com.github.legioth.propertysource.PropertySource" />
+<inherits name="com.github.legioth.propertysource.PropertySource" />
 
-  <define-property values="true,false" name="foo.bool" />
-  <set-property name="foo.bool" value="false" />
+<define-property values="true,false" name="foo.bool" />
+<set-property name="foo.bool" value="false" />
 
-  <define-property values="string1,string2" name="foo.string" />
-  <set-property name="foo.string" value="string1" />
+<define-property values="string1,string2" name="foo.string" />
+<set-property name="foo.string" value="string1" />
 ```
 ```java
 @Namespace("foo")
-public interface MyStaticPropertySource extends PropertySource {
-  public boolean bool();
-  public String string();
+public interface MyStaticPropertySource
+  extends PropertySource
+{
+  boolean bool();
+  String string();
 }
 ```
 ```java
-public class MyEntryPoint implements EntryPoint {
+public class MyEntryPoint
+  implements EntryPoint
+{
   @Override
-  public void onModuleLoad() {
-    MyStaticPropertySource staticSource = GWT.create(MyStaticPropertySource.class);
-    if (staticSource.bool()) {
-      Window.alert(staticSource.string());
+  public void onModuleLoad()
+  {
+    MyStaticPropertySource staticSource = GWT.create( MyStaticPropertySource.class );
+    if( staticSource.bool() )
+    {
+      Window.alert( staticSource.string() );
     }
   }
 }
@@ -44,26 +50,33 @@ Replacing classes based on selection properties and controlling generator output
 Consider a simple case where a simple tweak is needed in certain browsers but no in others. With classical deferred binding, the code would look something like this:
 
 ```
-  public void doSomething() {
-    doStuffCommonToAllBrowsers();
-    doStuffNeededInOnlyOneBrowser();
-    doMoreCommonStuff();
-  }
-  public doStuffNeededInOnlyOneBrowser() {
-    // Nothing here, but subclasses might do something special
-  }
+public void doSomething()
+{
+  doStuffCommonToAllBrowsers();
+  doStuffNeededInOnlyOneBrowser();
+  doMoreCommonStuff();
+}
+
+public doStuffNeededInOnlyOneBrowser()
+{
+  // Nothing here, but subclasses might do something special
+}
 ```
 To make  this work, you'd also need to create subclasses for each browser that requires special functionality, and for each subclass you'd also need a couple of lines of xml. Now consider the alternative:
 ```
-  public void doSomething() {
-    doStuffCommonToAllBrowsers();
-    if (BrowserPermutation.isBrowser1()) {
-      doStuffNeededInBrowser1();
-    } else if (BrowserPermutation.isBrowser2()) {
-      doStuffNeededInBrowser2();
-    }
-    doMoreCommonStuff();
+public void doSomething()
+{
+  doStuffCommonToAllBrowsers();
+  if( BrowserPermutation.isBrowser1() )
+  {
+    doStuffNeededInBrowser1();
   }
+  else if( BrowserPermutation.isBrowser2() )
+  {
+    doStuffNeededInBrowser2();
+  }
+  doMoreCommonStuff();
+}
 ```
 As long as the values of `BrowserPermutation.isBrowser1()` and `BrowserPermutation.isBrowser2()` are known at compile time, the GWT compiler will remove the browser specific code from the other permutations.
 

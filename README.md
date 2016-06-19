@@ -2,6 +2,7 @@ PropertySource
 ==============
 
 [![Build Status](https://secure.travis-ci.org/realityforge/gwt-property-source.png?branch=master)](http://travis-ci.org/realityforge/gwt-property-source)
+[<img src="https://img.shields.io/maven-central/v/org.realityforge.gwt.property-source/gwt-property-source.svg?label=latest%20release"/>](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.realityforge.gwt.property-source%22%20a%3A%22gwt-property-source%22)
 
 A convenient way of compiling GWT property values into your module.
 

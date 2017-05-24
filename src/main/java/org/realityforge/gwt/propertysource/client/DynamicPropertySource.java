@@ -8,14 +8,14 @@ import java.util.List;
  * by that method during GWT compilation. This can be used to produce constant
  * return values based on e.g. property values or other information statically
  * available during GWT compilation.
- * <p/>
+ *
  * Property values can be accessed using
  * {@link #getSelectionPropertyValue(String)} and
  * {@link #getConfigurationPropertyValues(String)}. These methods can only be
  * used during GWT compilation.
- * <p/>
+ *
  * Supported return types for the methods are <code>String</code>,
- * <code>boolean</code> and <code>List&lt;String&gt</code>.
+ * <code>boolean</code> and <code>List&lt;String&gt;</code>.
  *
  * @see PropertySource
  */

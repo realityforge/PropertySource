@@ -12,7 +12,7 @@ import java.lang.annotation.Target;
  * an interface, all methods in that interface will return a value based on the
  * defined GWT property. If this annotation is on both on the type and the
  * method, the value from the method is used.
- * <p/>
+ *
  * If this annotation is not used, the property name will be determined using
  * the method name and any @{@link Namespace} annotation on the interface.
  *

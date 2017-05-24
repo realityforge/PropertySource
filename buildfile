@@ -1,6 +1,5 @@
 require 'buildr/git_auto_version'
 require 'buildr/gpg'
-require 'buildr/custom_pom'
 
 desc 'GWT Property Source Library: Programmatic access to compile time configuration values'
 define 'gwt-property-source' do
